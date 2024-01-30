@@ -1852,6 +1852,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1362275046502220041, guid: d223480c8ff41734fa58cc7bc9475db7,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362275046502220041, guid: d223480c8ff41734fa58cc7bc9475db7,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1750127805020159614, guid: d223480c8ff41734fa58cc7bc9475db7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1906,11 +1916,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpaceHeavy
-      objectReference: {fileID: 0}
-    - target: {fileID: 4937680393788892789, guid: d223480c8ff41734fa58cc7bc9475db7,
-        type: 3}
-      propertyPath: MaxHealth
-      value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12492,9 +12497,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_audioClip: {fileID: 8300000, guid: cd9de119a3d341f4db3935a82040a5b8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -12538,7 +12543,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
