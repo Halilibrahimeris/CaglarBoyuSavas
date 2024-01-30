@@ -5073,6 +5073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db117bb862621e45b723278bd22bafa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SoliderTypeS: Ally
   Anim: {fileID: 3214125655368601998}
   Speed: 2.5
   MoveDistance: 1.5
@@ -5111,8 +5112,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31b5cdd03d2b26b4db669fe7d4545fbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentHealth: 0
   AttackDamage: 20
-  Health: 100
+  MaxHealth: 120
 --- !u!65 &5088359001648818836
 BoxCollider:
   m_ObjectHideFlags: 0

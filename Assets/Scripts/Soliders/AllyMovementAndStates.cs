@@ -1,7 +1,11 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AllyMovementAndStates : MonoBehaviour
 {
+    List<string> SoliderType = new List<string> { "Ally", "Enemy" };
+    public string SoliderTypeS;
+
     Attack attack;
     public Animator Anim;
 
@@ -29,7 +33,14 @@ public class AllyMovementAndStates : MonoBehaviour
 
         if (Run)
         {
-            this.transform.position += Vector3.forward * Speed * Time.deltaTime;
+            if(SoliderTypeS == SoliderType[0])
+            {
+                this.transform.position += Vector3.forward * Speed * Time.deltaTime;
+            }
+            else
+            {
+                this.transform.position += Vector3.back * Speed * Time.deltaTime;
+            }
         }
         else if (Attack && Enemy!=null)
         {
@@ -78,36 +89,79 @@ public class AllyMovementAndStates : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy"))
+        if (SoliderTypeS == SoliderType[0])
         {
-            if(Enemy == null)
+            if (other.CompareTag("Enemy"))
             {
-                Enemy = other.gameObject;
-                Attack = true;
-                Run = false;
-                Anim.SetBool("isRunning", false);
+                if (Enemy == null)
+                {
+                    Enemy = other.gameObject;
+                    Attack = true;
+                    Run = false;
+                    Anim.SetBool("isRunning", false);
+                }
+            }
+        }
+        else
+        {
+            if (other.CompareTag("Ally"))
+            {
+                if (Enemy == null)
+                {
+                    Enemy = other.gameObject;
+                    Attack = true;
+                    Run = false;
+                    Anim.SetBool("isRunning", false);
+                }
             }
         }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Enemy"))
+        if (SoliderTypeS == SoliderType[0])
         {
-            Attack = true;
-            Run = false;
-            Anim.SetBool("isRunning", false);
+            if (other.CompareTag("Enemy"))
+            {
+                Attack = true;
+                Run = false;
+                Anim.SetBool("isRunning", false);
+            }
         }
+        else
+        {
+            if (other.CompareTag("Ally"))
+            {
+                Attack = true;
+                Run = false;
+                Anim.SetBool("isRunning", false);
+            }
+        }
+          
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Enemy"))
+        if(SoliderTypeS == SoliderType[0])
         {
-            Attack = false;
-            Enemy = null;
-            Run = true;
-            Anim.SetBool("isRunning", true);
+            if (other.CompareTag("Enemy"))
+            {
+                Attack = false;
+                Enemy = null;
+                Run = true;
+                Anim.SetBool("isRunning", true);
+            }
         }
+        else
+        {
+            if (other.CompareTag("Ally"))
+            {
+                Attack = false;
+                Enemy = null;
+                Run = true;
+                Anim.SetBool("isRunning", true);
+            }
+        }
+        
     }
 
 

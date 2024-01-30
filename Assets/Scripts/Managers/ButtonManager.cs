@@ -79,7 +79,8 @@ public class ButtonManager : MonoBehaviour
             }
             else if (GameManager.instance._Age == GameManager.Age.UzayCagý && GameManager.instance.Money >= 400)
             {
-                //var Solider = Instantiate(PrefabManager.instance.HeavySolidersAlly[2], MyBase.instance.BaseSpawn);
+                var Solider = Instantiate(PrefabManager.instance.HeavySolidersAlly[2], MyBase.instance.BaseSpawn);
+                Solider.transform.localPosition = Vector3.zero;
                 Debug.Log("Uzay Devrinde Heavy Spawnla");
             }
         }
