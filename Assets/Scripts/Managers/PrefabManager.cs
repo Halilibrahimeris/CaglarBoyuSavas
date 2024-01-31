@@ -8,6 +8,10 @@ public class PrefabManager : MonoBehaviour
     public GameObject[] RangeSolidersAlly;
     public GameObject[] HeavySolidersAlly;
 
+    public GameObject[] MeleeSolidersEnemy;
+    public GameObject[] RangeSolidersEnemy;
+    public GameObject[] HeavySolidersEnemy;
+
     public static PrefabManager instance;
 
     public void Awake()
