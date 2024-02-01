@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class TriggerCheck : MonoBehaviour
 {
-    [SerializeField] string Type;
-    public GameObject Object;
-    public bool CanSpawn;
+    [SerializeField] string Type;//Kontrol edilecek nesnenin hedef tagi
+    public GameObject Object;//Tespit edilen nesnenin GameObjecti
+    public bool CanSpawn;//Spawn atabileceðimizi kontrol eden bool
     private void OnTriggerStay(Collider other)
     {
-        if(other.tag == Type)
+        if(other.tag == Type)//Triggerýn içinde duran nesnenin tagini kontrol ediyor
         {
-            if(Object == null)
+            if(Object == null)//Nesnemiz yok ise 
             {
-                Object = other.gameObject;
-                CanSpawn = false;
+                Object = other.gameObject;//Ýçerideki nesne yeni nesne oluyor
+                CanSpawn = false;//Spawn atmamýzý engelliyor
             }
         }
     }
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)//içerideki nesne çýktý ise
     {
-        Object = null;
-        CanSpawn = true;
+        Object = null;//nesnemizi sýfýrlýyoruz
+        CanSpawn = true;//spawn izni veriyoruz
     }
 
 
