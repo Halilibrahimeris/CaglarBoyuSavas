@@ -2114,6 +2114,37 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000000024214387, y: 0.7099228, z: 0.08985246}
     m_Extent: {x: 0.045653895, y: 0.014752507, z: 0.014238007}
   m_DirtyAABB: 0
+--- !u!1 &3856335975803078635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7437441264150978173}
+  m_Layer: 0
+  m_Name: RaycastPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7437441264150978173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3856335975803078635}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.756, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7387655389781323911}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3891046360597802740
 GameObject:
   m_ObjectHideFlags: 0
@@ -2663,6 +2694,7 @@ Transform:
   m_Children:
   - {fileID: 2605327948490062568}
   - {fileID: 336696697461362746}
+  - {fileID: 7437441264150978173}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1509120768228118844
@@ -2748,7 +2780,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 114
   m_CollisionDetection: 0
 --- !u!136 &852614231352800837
 CapsuleCollider:
@@ -2769,10 +2801,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1.97
+  m_Radius: 0.29
+  m_Height: 2.232109
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.00605464, z: 0}
 --- !u!1 &4681710984959686461
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
+    [SerializeField] TriggerCheck TriggerCheck;
+
     public enum Type
     {
         Melee,
@@ -14,10 +16,22 @@ public class ButtonManager : MonoBehaviour
     public Type ButtonType;
 
     Button button;
+
     void Start()
     {
         button = GetComponent<Button>();
         button.onClick.AddListener(ButtonClick);
+    }
+    private void Update()
+    {
+        if(TriggerCheck.CanSpawn == true)
+        {
+            button.interactable = true;
+        }
+        else
+        {
+            button.interactable = false;
+        }
     }
     public void ButtonClick()
     {

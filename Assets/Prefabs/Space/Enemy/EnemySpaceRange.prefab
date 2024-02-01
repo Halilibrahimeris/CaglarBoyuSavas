@@ -797,7 +797,7 @@ MonoBehaviour:
   - Enemy
   SoliderTypeS: Enemy
   Anim: {fileID: 3176722999021802327}
-  Speed: 2.5
+  Speed: 2
   MoveDistance: 1.5
   Enemy: {fileID: 0}
   Ally: {fileID: 0}
