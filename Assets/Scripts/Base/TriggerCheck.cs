@@ -23,6 +23,4 @@ public class TriggerCheck : MonoBehaviour
         Object = null;//nesnemizi sýfýrlýyoruz
         CanSpawn = true;//spawn izni veriyoruz
     }
-
-
 }

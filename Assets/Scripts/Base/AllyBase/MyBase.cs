@@ -5,8 +5,9 @@ using UnityEngine;
 public class MyBase : MonoBehaviour
 {
     public static MyBase instance;
-    public Transform BaseSpawn;
-    public void Awake()
+
+    public Transform BaseSpawn;//Nesneleri spawnladýðýmýz nokta
+    public void Awake()//instance kodu
     {
         if(instance == null)
         {
@@ -18,7 +19,7 @@ public class MyBase : MonoBehaviour
         }
     }
     
-    public void Spawn(Transform SpawnPoint, GameObject SpawnObject)
+    public void Spawn(Transform SpawnPoint, GameObject SpawnObject)//nesnemizin içinde bulunan spawn atmamýzý saðlayan fonksiyon
     {
         var Solider = Instantiate(SpawnObject, SpawnPoint);
     }
