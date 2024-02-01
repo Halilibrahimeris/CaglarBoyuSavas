@@ -60,25 +60,21 @@ public class EnemyBase : MonoBehaviour
             if (Gold >= 400)
             {
                 int a = Random.Range(0, 3);
-                Debug.Log("Random Spawn = " + a);
                 switch (a)
                 {
                     case 0:
-                        Debug.Log("Gelen Asker = " + "Uzay Melee");
                         var Solider = Instantiate(PrefabManager.instance.MeleeSolidersEnemy[2], SpawnPoint);
                         Solider.transform.localPosition = Vector3.zero;
                         this.Gold -= 200;
                         meleeCount++;
                         break;
                     case 1:
-                        Debug.Log("Gelen Asker = " + "Uzay Range");
                         var Solider1 = Instantiate(PrefabManager.instance.RangeSolidersEnemy[2], SpawnPoint);
                         Solider1.transform.localPosition = Vector3.zero;
                         this.Gold -= 200;
                         rangeCount++;
                         break;
                     case 2:
-                        Debug.Log("Gelen Asker = " + "Uzay Heavy");
                         var Solider2 = Instantiate(PrefabManager.instance.HeavySolidersEnemy[2], SpawnPoint);
                         Solider2.transform.localPosition = Vector3.zero;
                         this.Gold -= 200;

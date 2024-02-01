@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 public class Stats : MonoBehaviour
@@ -9,6 +8,7 @@ public class Stats : MonoBehaviour
     public float MaxHealth;
 
     public TextMeshProUGUI text;
+    public Slider Slider;
     private void Start()
     {
         CurrentHealth = MaxHealth;
@@ -16,10 +16,20 @@ public class Stats : MonoBehaviour
         {
             text.text = CurrentHealth.ToString();
         }
+        if (Slider != null)
+        {
+            Slider.maxValue = MaxHealth;
+            Slider.minValue = 0;
+            Slider.value = CurrentHealth;
+        }
     }
     public void TakeDamage(float Damage)
     {
         CurrentHealth -= Damage;
+        if(Slider != null)
+        {
+            Slider.value = CurrentHealth;
+        }
         if(text != null)
         {
             text.text = CurrentHealth.ToString();

@@ -66,11 +66,11 @@ public class AllyMovementAndStates : MonoBehaviour
             {
                 if (hit.collider.CompareTag("Ally"))//Askerin önünde ally var ise 
                 {
+                    Debug.Log("Ally Allyý buldu bulan çarýn ýsmý : " + this.gameObject.name);
                     Transform ally = hit.transform;
-                    GameObject allyGameObject = ally.transform.gameObject;
+                    Ally = ally.transform.gameObject;
                     // Ray'i görselleþtir
                     Debug.DrawRay(raycastPos, rayDirection * hit.distance, Color.red);//raycast kýrmýzýya dönecek
-                    Ally = allyGameObject;
                     Run = false;
                     Anim.SetBool("isRunning", false);
                 }//Karakter duracak idle pozisyonuna geçecek
