@@ -7,15 +7,10 @@ public class Stats : MonoBehaviour
     public float AttackDamage;
     public float MaxHealth;
 
-    public TextMeshProUGUI text;
     public Slider Slider;
     private void Start()
     {
         CurrentHealth = MaxHealth;
-        if (text != null)
-        {
-            text.text = CurrentHealth.ToString();
-        }
         if (Slider != null)
         {
             Slider.maxValue = MaxHealth;
@@ -29,10 +24,6 @@ public class Stats : MonoBehaviour
         if(Slider != null)
         {
             Slider.value = CurrentHealth;
-        }
-        if(text != null)
-        {
-            text.text = CurrentHealth.ToString();
         }
         if(CurrentHealth <= 0)
         {

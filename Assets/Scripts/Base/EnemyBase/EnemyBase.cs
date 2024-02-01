@@ -12,9 +12,6 @@ public class EnemyBase : MonoBehaviour
     
     public Transform SpawnPoint;
 
-    int meleeCount;
-    int rangeCount;
-    int heavyCount;
     private void Update()
     {
 
@@ -66,53 +63,19 @@ public class EnemyBase : MonoBehaviour
                         var Solider = Instantiate(PrefabManager.instance.MeleeSolidersEnemy[2], SpawnPoint);
                         Solider.transform.localPosition = Vector3.zero;
                         this.Gold -= 200;
-                        meleeCount++;
                         break;
                     case 1:
                         var Solider1 = Instantiate(PrefabManager.instance.RangeSolidersEnemy[2], SpawnPoint);
                         Solider1.transform.localPosition = Vector3.zero;
                         this.Gold -= 200;
-                        rangeCount++;
                         break;
                     case 2:
                         var Solider2 = Instantiate(PrefabManager.instance.HeavySolidersEnemy[2], SpawnPoint);
                         Solider2.transform.localPosition = Vector3.zero;
                         this.Gold -= 200;
-                        heavyCount++;
                         break;
                 }
             }
         }
     }
 }
-
-//Tekrarý engellemek için yazýldý
-
-/*switch (a)
-{
-    case 0:
-        if (meleeCount == 3)
-        {
-            a = Random.Range(1, 3);
-            meleeCount = 0;
-        }
-        break;
-    case 1:
-        if (rangeCount == 3)
-        {
-            a = Random.Range(1, 3);
-            if (a == 1)
-            {
-                a = 0;
-            }
-            rangeCount = 0;
-        }
-        break;
-    case 2:
-        if (heavyCount == 3)
-        {
-            a = Random.Range(0, 1);
-            heavyCount = 0;
-        }
-        break;
-}//Tekrarý engellemek için yazýlan kod*/

@@ -29,7 +29,16 @@ public class Attack : MonoBehaviour
             Invoke("ResetShoot", ShootingDelay);
             _anim.SetTrigger("Attack");
             Debug.Log("Enemy Damage yedi");
-            Enemy.GetComponent<Stats>().TakeDamage(stats.AttackDamage);
+            Stats _stats = Enemy.GetComponent<Stats>();
+            BaseStats basestats = Enemy.GetComponent<BaseStats>();
+            if(_stats != null)
+            {
+                _stats.TakeDamage(stats.AttackDamage);
+            }
+            if(basestats != null)
+            {
+                basestats.TakeDamage(stats.AttackDamage);
+            }
             _allowReset = false;
             Source.Play();
         }
