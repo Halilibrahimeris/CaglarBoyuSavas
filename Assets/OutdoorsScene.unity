@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2832.76, g: 2935.1565, b: 4332.9224, a: 1}
+  m_IndirectSpecularColor: {r: 2829.385, g: 2875.7698, b: 4081.0786, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12041,7 +12041,7 @@ MonoBehaviour:
   RangeSolidersAlly:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 8660071212745883293, guid: 01790e9a652c6d84582ffb0ba1f57513, type: 3}
+  - {fileID: 4560641716466651149, guid: 01790e9a652c6d84582ffb0ba1f57513, type: 3}
   HeavySolidersAlly:
   - {fileID: 0}
   - {fileID: 0}
@@ -12053,7 +12053,7 @@ MonoBehaviour:
   RangeSolidersEnemy:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 6346901223279962394, guid: b762988276be2b140b32250623b53c54, type: 3}
+  - {fileID: 1181905235587209554, guid: b762988276be2b140b32250623b53c54, type: 3}
   HeavySolidersEnemy:
   - {fileID: 0}
   - {fileID: 0}
