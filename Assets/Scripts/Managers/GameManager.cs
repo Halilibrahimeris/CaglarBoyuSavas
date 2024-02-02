@@ -27,6 +27,18 @@ public class GameManager : MonoBehaviour
     }
     public Age _Age;
 
+    public void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void Update()
     {
         AgeTimer += Time.deltaTime;
@@ -66,18 +78,6 @@ public class GameManager : MonoBehaviour
             {
                 _Age = Age.UzayCagý;
             }
-        }
-    }
-
-    public void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
         }
     }
 }

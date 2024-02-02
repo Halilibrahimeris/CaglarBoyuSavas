@@ -4,33 +4,33 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public float speed;
-    public float LeftLimit, RightLimit;
+    public float speed;//kamera hýzýný belirten deðiþken
+    public float LeftLimit, RightLimit;//kameranýn gideceði max limitler
 
-    // Update is called once per frame
+
     void Update()
     {
-        if (Input.GetKey(KeyCode.D) && transform.position.z <= RightLimit)
+        if (Input.GetKey(KeyCode.D) && transform.position.z <= RightLimit)//D tuþuna basýyorsak ve limiti aþmadýysak
         {
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.LeftShift))//shifte basýyorsak daha hýzlý gideceðiz
             {
                 transform.position += Vector3.forward * speed * 5 * Time.deltaTime;
                 Debug.Log("Saga git Shift");
             }
-            else
+            else//shifte basýmýyorsak normal gideceðiz
             {
                 transform.position += Vector3.forward * speed * Time.deltaTime;
                 Debug.Log("Saga git");
             }
         }
-        else if (Input.GetKey(KeyCode.A) && transform.position.z >= LeftLimit)
+        else if (Input.GetKey(KeyCode.A) && transform.position.z >= LeftLimit)//A tuþuna basýyorsak ve limiti aþmadýysak
         {
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.LeftShift))//shifte basýyorsak daha hýzlý gideceðiz
             {
                 transform.position += Vector3.back * speed * 5 * Time.deltaTime;
                 Debug.Log("Sola git Shift");
             }
-            else
+            else//shifte basýmýyorsak normal gideceðiz
             {
                 transform.position += Vector3.back * speed * Time.deltaTime;
                 Debug.Log("Sola git");
