@@ -12,7 +12,7 @@ public class Triggers : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)//Karakterde bulunan collidera bir nesne girer ise
     {
-        if (states.SoliderTypeS == states.SoliderType[0])//Asker tipi Ally ise
+        if (states.Type == AllyMovementAndStates.SolidersType.Ally)//Asker tipi Ally ise
         {
             if (other.CompareTag("Enemy"))//Giren nesne Enemy ise
             {
@@ -42,7 +42,7 @@ public class Triggers : MonoBehaviour
 
     private void OnTriggerStay(Collider other)//Karakterde bulunan collidera bir nesne duruyor ise
     {
-        if (states.SoliderTypeS == states.SoliderType[0])//Asker tipi Ally ise
+        if (states.Type == AllyMovementAndStates.SolidersType.Ally)//Asker tipi Ally ise
         {
             if (other.CompareTag("Enemy"))//Duran nesne Enemy ise
             {
@@ -64,7 +64,7 @@ public class Triggers : MonoBehaviour
     }
     private void OnTriggerExit(Collider other) //Karakterde bulunan colliderdan bir nesne çýktý ise
     {
-        if (states.SoliderTypeS == states.SoliderType[0])  //Asker tipi Ally ise
+        if (states.Type == AllyMovementAndStates.SolidersType.Ally)  //Asker tipi Ally ise
         {
             if (other.CompareTag("Enemy"))  //Çýkan nesne Enemy ise
             {

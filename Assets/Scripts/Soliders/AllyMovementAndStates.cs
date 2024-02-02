@@ -3,8 +3,12 @@ using UnityEngine;
 
 public class AllyMovementAndStates : MonoBehaviour
 {
-    public List<string> SoliderType = new List<string> { "Ally", "Enemy" };//Oyundaki Karakter Tipleri
-    public string SoliderTypeS;//Karakter Tiplerinin bulunduðu string
+    public enum SolidersType
+    {
+        Ally,
+        Enemy
+    }
+    public SolidersType Type;
 
     Attack attack; //Attack Classý
     public Animator Anim;//Animatör eriþimi
@@ -33,7 +37,7 @@ public class AllyMovementAndStates : MonoBehaviour
 
         if (Run)//Yürüme durumnda ise
         {
-            if(SoliderTypeS == SoliderType[0])//Asker tipi Ally ise
+            if(Type == SolidersType.Ally)//Asker tipi Ally ise
             {
                 this.transform.position += Vector3.forward * Speed * Time.deltaTime;// Karakter ileri gidecek (Yürüyecek)
             }
@@ -62,7 +66,7 @@ public class AllyMovementAndStates : MonoBehaviour
 
         if (Physics.Raycast(raycastPos, rayDirection, out hit, MoveDistance))//raycast bir yere verilen parametreler ile çarptýysa
         {
-            if(SoliderTypeS == SoliderType[0])//Asker tipi Ally ise
+            if (Type == SolidersType.Ally)//Asker tipi Ally ise
             {
                 if (hit.collider.CompareTag("Ally"))//Askerin önünde ally var ise 
                 {
@@ -91,20 +95,21 @@ public class AllyMovementAndStates : MonoBehaviour
                     Debug.DrawRay(raycastPos, rayDirection * hit.distance, Color.red);//raycast kýrmýzýya dönecek
                     Ally = allyGameObject;
                     Run = false;
-                    Anim.SetBool("isRunning", false);
+                    Anim.SetBool("isRunning", false);;
                 }//Karakter duracak idle pozisyonuna geçecek
                 else//Önünde Enemy olmadýðý için yürüme durumuna geçecek
                 {
                     Ally = null;
                     Run = true;
                     Anim.SetBool("isRunning", true);
+                    Debug.Log(hit.collider.name + " " + gameObject.name + " " + transform.position);
                 }
             }
             
         }
         else//Raycast bir yere çarpmadý ise
         {
-            Debug.DrawRay(raycastPos, rayDirection * MoveDistance, Color.green);//raycast rengi yeþil olacak
+            Debug.DrawRay(raycastPos, rayDirection * MoveDistance, Color.black);//raycast rengi yeþil olacak
             Ally = null;
             Run = true;
             Anim.SetBool("isRunning", true);
