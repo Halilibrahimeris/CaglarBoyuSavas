@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public int Money;
 
     public TextMeshProUGUI AllyText;
+    public EnemyBase EnemyBase;
     private void Start()
     {
         AllyText.text = Money.ToString();
@@ -35,18 +36,21 @@ public class GameManager : MonoBehaviour
             if (_Age == Age.TasDevri)
             {
                 Money += 10;
+                EnemyBase.Gold += 10;
                 MoneyTimer = 0;
                 AllyText.text = Money.ToString();
             }
             else if (_Age == Age.OrtaCag)
             {
                 Money += 30;
+                EnemyBase.Gold += 30;
                 MoneyTimer = 0;
                 AllyText.text = Money.ToString();
             }
             else
             {
                 Money += 50;
+                EnemyBase.Gold += 50;
                 MoneyTimer = 0;
                 AllyText.text = Money.ToString();
             }
