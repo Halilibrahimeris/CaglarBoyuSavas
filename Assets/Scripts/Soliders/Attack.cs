@@ -15,7 +15,10 @@ public class Attack : MonoBehaviour
     private void Start()
     {
         _anim = GetComponentInChildren<Animator>();
-        ShootingDelay = attackanim.length;
+        if(attackanim != null)
+        {
+            ShootingDelay = attackanim.length;
+        }
 
     }
     public void Fire(GameObject Enemy)
