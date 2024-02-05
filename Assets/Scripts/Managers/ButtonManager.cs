@@ -46,7 +46,8 @@ public class ButtonManager : MonoBehaviour
             else if (GameManager.instance._Age == GameManager.Age.OrtaCag && GameManager.instance.Money >= 100)
             {
                 Debug.Log("OrtaCag Devrinde Melee Spawnla");
-                //var Solider = Instantiate(PrefabManager.instance.MeleeSolidersAlly[1], MyBase.instance.BaseSpawn);
+                var Solider = Instantiate(PrefabManager.instance.MeleeSolidersAlly[1], MyBase.instance.BaseSpawn);
+                Solider.transform.localPosition = Vector3.zero;
             }
             else if (GameManager.instance._Age == GameManager.Age.UzayCagý && GameManager.instance.Money >= 200)
             {
@@ -67,7 +68,8 @@ public class ButtonManager : MonoBehaviour
             else if (GameManager.instance._Age == GameManager.Age.OrtaCag && GameManager.instance.Money >= 150)
             {
                 Debug.Log("OrtaCag Range spawnla");
-                //var Solider = Instantiate(PrefabManager.instance.RangeSolidersAlly[1], MyBase.instance.BaseSpawn);
+                var Solider = Instantiate(PrefabManager.instance.RangeSolidersAlly[1], MyBase.instance.BaseSpawn);
+                Solider.transform.localPosition = Vector3.zero;
             }
             else if (GameManager.instance._Age == GameManager.Age.UzayCagý && GameManager.instance.Money >= 300)
             {

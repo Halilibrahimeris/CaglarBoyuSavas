@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
             else
             {
                 Money += 50;
-                EnemyBase.Gold += 50;
+                EnemyBase.Gold += 50;   
                 MoneyTimer = 0;
                 AllyText.text = Money.ToString();
             }

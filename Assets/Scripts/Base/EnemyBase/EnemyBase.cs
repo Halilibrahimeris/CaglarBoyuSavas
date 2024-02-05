@@ -36,7 +36,25 @@ public class EnemyBase : MonoBehaviour
         }
         else if (GameManager.instance._Age == GameManager.Age.OrtaCag)//orta çaðda isek
         {
-            
+            a = Random.Range(0, 2);//rastgele asker seçiliyor
+            switch (a)//seçilen asker case yapýsýnda bulunuyor
+            {
+                case 0:
+                    var Solider = Instantiate(PrefabManager.instance.MeleeSolidersEnemy[1], SpawnPoint);
+                    Solider.transform.localPosition = Vector3.zero;
+                    this.Gold -= 200;
+                    break;
+                case 1:
+                    var Solider1 = Instantiate(PrefabManager.instance.RangeSolidersEnemy[1], SpawnPoint);
+                    Solider1.transform.localPosition = Vector3.zero;
+                    this.Gold -= 200;
+                    break;
+               /*case 2:
+                    var Solider2 = Instantiate(PrefabManager.instance.HeavySolidersEnemy[1], SpawnPoint);
+                    Solider2.transform.localPosition = Vector3.zero;
+                    this.Gold -= 200;
+                    break;*/
+            }
         }
         else if (GameManager.instance._Age == GameManager.Age.UzayCagý)//uzay çaðýnda isek
         {
