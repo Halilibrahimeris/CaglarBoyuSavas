@@ -4926,10 +4926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db117bb862621e45b723278bd22bafa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoliderType:
-  - Ally
-  - Enemy
-  SoliderTypeS: Enemy
+  Type: 1
   Anim: {fileID: 1512711419058563707}
   Speed: 2
   MoveDistance: 1.5

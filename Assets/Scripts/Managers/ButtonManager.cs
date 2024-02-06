@@ -91,7 +91,8 @@ public class ButtonManager : MonoBehaviour
             else if (GameManager.instance._Age == GameManager.Age.OrtaCag && GameManager.instance.Money >= 200)
             {
                 Debug.Log("OrtaCag Devrinde Heavy Spawnla");
-                //var Solider = Instantiate(PrefabManager.instance.HeavySolidersAlly[1], MyBase.instance.BaseSpawn);
+                var Solider = Instantiate(PrefabManager.instance.HeavySolidersAlly[1], MyBase.instance.BaseSpawn);
+                Solider.transform.localPosition = Vector3.zero;
             }
             else if (GameManager.instance._Age == GameManager.Age.UzayCagý && GameManager.instance.Money >= 400)
             {

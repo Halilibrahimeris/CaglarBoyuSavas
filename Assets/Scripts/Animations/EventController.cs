@@ -5,6 +5,7 @@ using UnityEngine;
 public class EventController : MonoBehaviour
 {
     public GameObject HandArrow;
+    public GameObject Stone;
     public void IdleStart()
     {
         HandArrow.SetActive(false);
@@ -16,5 +17,14 @@ public class EventController : MonoBehaviour
     public void ArrowLeft()
     {
         HandArrow.SetActive(false);
+    }
+
+    public void StoneActive()
+    {
+        Stone.SetActive(true);
+    }
+    public void StoneDeactive()
+    {
+        Stone.SetActive(false);
     }
 }

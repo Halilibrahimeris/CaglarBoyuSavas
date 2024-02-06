@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HandArrow: {fileID: 6362379505736928360}
+  Stone: {fileID: 0}
 --- !u!82 &2054191432719115143
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2684,7 +2685,7 @@ GameObject:
   - component: {fileID: 6531844935300344004}
   - component: {fileID: 1077235386701659038}
   m_Layer: 0
-  m_Name: AllyMediavalRange
+  m_Name: EnemyMediavalRange
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

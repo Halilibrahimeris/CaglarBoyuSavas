@@ -7,17 +7,16 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public float BetweenAges;
     public float MoneyTime;
     private float MoneyTimer;
-    public float AgeTimer;
     public int Money;
-
+    public int AgeMoney;
     public TextMeshProUGUI AllyText;
     public EnemyBase EnemyBase;
     private void Start()
     {
         AllyText.text = Money.ToString();
+        AgeMoney = 500;
     }
     public enum Age
     {
@@ -41,7 +40,6 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        AgeTimer += Time.deltaTime;
         MoneyTimer += Time.deltaTime;
         if(MoneyTimer >= MoneyTime)
         {
@@ -67,16 +65,22 @@ public class GameManager : MonoBehaviour
                 AllyText.text = Money.ToString();
             }
         }
-        if(AgeTimer >= BetweenAges)
+    }
+
+    public void AgeUp()
+    {
+        if(Money >= AgeMoney)
         {
             if(_Age == Age.TasDevri)
             {
                 _Age = Age.OrtaCag;
-                AgeTimer = 0;
+                Money -= AgeMoney;
+                AgeMoney = 1000;
             }
             else if(_Age == Age.OrtaCag)
             {
                 _Age = Age.UzayCagý;
+                Money -= AgeMoney;
             }
         }
     }

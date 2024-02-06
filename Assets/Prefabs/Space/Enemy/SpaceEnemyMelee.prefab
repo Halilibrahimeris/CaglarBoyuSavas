@@ -905,10 +905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db117bb862621e45b723278bd22bafa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoliderType:
-  - Ally
-  - Enemy
-  SoliderTypeS: Enemy
+  Type: 1
   Anim: {fileID: 7277160640904405893}
   Speed: 2
   MoveDistance: 1.5
@@ -950,7 +947,6 @@ MonoBehaviour:
   CurrentHealth: 0
   AttackDamage: 15
   MaxHealth: 175
-  text: {fileID: 0}
   Slider: {fileID: 7553350217548672300}
 --- !u!54 &9133691204931564888
 Rigidbody:
