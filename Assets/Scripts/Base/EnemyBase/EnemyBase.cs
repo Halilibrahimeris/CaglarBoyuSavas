@@ -32,7 +32,27 @@ public class EnemyBase : MonoBehaviour
 
         if (GameManager.instance._Age == GameManager.Age.TasDevri)//taþ devrinde isek
         {
-           
+            a = Random.Range(0, 3);//rastgele asker seçiliyor
+            if (a == 1)
+                a = 0;
+            switch (a)//seçilen asker case yapýsýnda bulunuyor
+            {
+                case 0:
+                    var Solider = Instantiate(PrefabManager.instance.MeleeSolidersEnemy[0], SpawnPoint);
+                    Solider.transform.localPosition = Vector3.zero;
+                    this.Gold -= 200;
+                    break;
+               /* case 1:
+                    var Solider1 = Instantiate(PrefabManager.instance.RangeSolidersEnemy[1], SpawnPoint);
+                    Solider1.transform.localPosition = Vector3.zero;
+                    this.Gold -= 200;
+                    break;*/
+                case 2:
+                    var Solider2 = Instantiate(PrefabManager.instance.HeavySolidersEnemy[0], SpawnPoint);
+                    Solider2.transform.localPosition = Vector3.zero;
+                    this.Gold -= 200;
+                    break;
+            }
         }
         else if (GameManager.instance._Age == GameManager.Age.OrtaCag)//orta çaðda isek
         {

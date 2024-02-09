@@ -46,9 +46,10 @@ public class AllyMovementAndStates : MonoBehaviour
                 this.transform.position += Vector3.back * Speed * Time.deltaTime;// Karakter tersi yöne yürüyecek
             }
         }
-        else if (Attack && Enemy!=null)// Saldýrý durumunda ve Düþman belirlendi ise
+        else if (Attack && Enemy!=null && attack.isEnd)// Saldýrý durumunda ve Düþman belirlendi ise
         {
-            attack.Fire(Enemy);//attack classýndaki ateþ Fonksiyonuna düþman verilerek çalýþacak
+            attack.Enemy = Enemy;
+            attack.Fire();//attack classýndaki ateþ Fonksiyonuna düþman verilerek çalýþacak
         }
         if (Enemy == null)//Düþman yok ise
         {

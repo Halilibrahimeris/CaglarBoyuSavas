@@ -41,7 +41,8 @@ public class ButtonManager : MonoBehaviour
             {
                 GameManager.instance.Money -= 50;
                 Debug.Log("AgeDevrinde Melee spawnla");
-                //var Solider = Instantiate(PrefabManager.instance.MeleeSolidersAlly[0], MyBase.instance.BaseSpawn);
+                var Solider = Instantiate(PrefabManager.instance.MeleeSolidersAlly[0], MyBase.instance.BaseSpawn);
+                Solider.transform.localPosition = Vector3.zero;
             }
             else if (GameManager.instance._Age == GameManager.Age.OrtaCag && GameManager.instance.Money >= 100)
             {
@@ -86,7 +87,8 @@ public class ButtonManager : MonoBehaviour
             {
                 GameManager.instance.Money -= 50;
                 Debug.Log("AgeDevrinde Heavy spawnla");
-                //var Solider = Instantiate(PrefabManager.instance.HeavySolidersAlly[0], MyBase.instance.BaseSpawn);
+                var Solider = Instantiate(PrefabManager.instance.HeavySolidersAlly[0], MyBase.instance.BaseSpawn);
+                Solider.transform.localPosition = Vector3.zero;
             }
             else if (GameManager.instance._Age == GameManager.Age.OrtaCag && GameManager.instance.Money >= 200)
             {

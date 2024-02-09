@@ -2267,7 +2267,7 @@ MonoBehaviour:
   Type: 0
   Anim: {fileID: 4476931362733710642}
   Speed: 2
-  MoveDistance: 1.5
+  MoveDistance: 2.5
   Enemy: {fileID: 0}
   Ally: {fileID: 0}
   Attack: 0

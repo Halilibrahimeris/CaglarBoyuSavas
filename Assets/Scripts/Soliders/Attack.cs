@@ -6,51 +6,36 @@ public class Attack : MonoBehaviour
 {
     public Stats stats;
     Animator _anim;
-    public AnimationClip attackanim;
     public AudioSource Source;
 
-    public bool ReadyToShoot;
-    public bool _allowReset = true;
-    public float ShootingDelay;
+    public GameObject Enemy;
+    public bool isEnd;
     private void Start()
     {
-        _anim = GetComponentInChildren<Animator>();
-        if(attackanim != null)
-        {
-            ShootingDelay = attackanim.length;
-        }
-
+        _anim = GetComponent<Animator>();
+        isEnd = true;
     }
-    public void Fire(GameObject Enemy)
+    public void Fire()
     {
+        isEnd = false;
         //Play Effect
-
-        ReadyToShoot = false;
-
-        if (_allowReset)
+        _anim.SetTrigger("Attack");
+        Debug.Log("Enemy Damage yedi");
+        Stats _stats = Enemy.GetComponent<Stats>();
+        BaseStats basestats = Enemy.GetComponent<BaseStats>();
+        if (_stats != null)
         {
-            Invoke("ResetShoot", ShootingDelay);
-            _anim.SetTrigger("Attack");
-            Debug.Log("Enemy Damage yedi");
-            Stats _stats = Enemy.GetComponent<Stats>();
-            BaseStats basestats = Enemy.GetComponent<BaseStats>();
-            if(_stats != null)
-            {
-                _stats.TakeDamage(stats.AttackDamage);
-            }
-            if(basestats != null)
-            {
-                basestats.TakeDamage(stats.AttackDamage);
-            }
-            _allowReset = false;
-            Source.Play();
+            _stats.TakeDamage(stats.AttackDamage);
         }
-
+        if (basestats != null)
+        {
+            basestats.TakeDamage(stats.AttackDamage);
+        }
+        Source.Play();
     }
 
-    public void ResetShoot()
+    public void End()
     {
-        ReadyToShoot = true;
-        _allowReset = true;
+        isEnd = true;
     }
 }

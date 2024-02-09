@@ -1,0 +1,917 @@
+fileFormatVersion: 2
+guid: b7f70efda28719e42a803a9e725b0b8b
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      74: -9157724340726142629
+    second: Troll_Idle
+  - first:
+      74: -135081635329506399
+    second: Troll_Idle_long
+  - first:
+      74: 771669089995666903
+    second: Troll_Attack
+  - first:
+      74: -2911903852769220845
+    second: Troll_Damage
+  - first:
+      74: -7614083816372732888
+    second: Troll_Death
+  - first:
+      74: 6862590863617244936
+    second: Troll_Walk_fast
+  - first:
+      74: 4688763821548780317
+    second: Troll_Walk_slow
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: troll_death_effect_lambert12
+    second: {fileID: 2100000, guid: 2b6a0c3156f477843b9ba7fa931df3d5, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Troll_Idle' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'bip_neck1' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'Troll_Idle_long'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'bip_neck1'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Troll_Attack' has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'bip_neck1'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'bip_jaw'
+      has translation animation that will be discarded.\n\nClip 'Troll_Damage' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'bip_neck1' is
+      inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Troll_Death' has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'bip_neck1'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Troll_Walk_fast' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'bip_neck1'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Troll_Walk_slow' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'bip_neck1'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Troll_Idle
+      takeName: Troll_Idle
+      internalID: -9157724340726142629
+      firstFrame: 10
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.8181818
+        functionName: Attackk
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: a9675df3d60caa34da159f2ead9deb76,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 10
+    - serializedVersion: 16
+      name: Troll_Idle_long
+      takeName: Troll_Idle_long
+      internalID: -135081635329506399
+      firstFrame: 90
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Troll_Attack
+      takeName: Troll_Attack
+      internalID: 771669089995666903
+      firstFrame: 200
+      lastFrame: 270
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.7984189
+        functionName: AttackEvent
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: a9675df3d60caa34da159f2ead9deb76,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 199.79999
+    - serializedVersion: 16
+      name: Troll_Damage
+      takeName: Troll_Damage
+      internalID: -2911903852769220845
+      firstFrame: 280
+      lastFrame: 300
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Troll_Death
+      takeName: Troll_Death
+      internalID: -7614083816372732888
+      firstFrame: 310
+      lastFrame: 455
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Troll_Walk_fast
+      takeName: Troll_Walk_fast
+      internalID: 6862590863617244936
+      firstFrame: 460
+      lastFrame: 486
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Troll_Walk_slow
+      takeName: Troll_Walk_slow
+      internalID: 4688763821548780317
+      firstFrame: 500
+      lastFrame: 540
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 499.8
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: bip_pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_hip_L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_hip_R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_knee_L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_knee_R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_foot_L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_foot_R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_spine_0
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_spine_2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_collar_L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_collar_R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_upperArm_L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_upperArm_R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_lowerArm_L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_lowerArm_R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_hand_L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_hand_R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_toe_L
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_toe_R
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_jaw
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_thumb_0_L
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_finger_L5
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_finger_L6
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_thumb_0_R
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_finger_R5
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_finger_R6
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bip_wp_R
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Troll(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Club
+      parentName: Troll(Clone)
+      position: {x: 3.8398416, y: 1.1359969, z: -0.661825}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Troll
+      parentName: Troll(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Troll_death
+      parentName: Troll(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Troll_death_bones
+      parentName: Troll(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint1
+      parentName: Troll_death_bones
+      position: {x: 0.2880613, y: -0.044704724, z: 0.20191944}
+      rotation: {x: -0.00000008940697, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint2
+      parentName: Troll_death_bones
+      position: {x: -0.3500274, y: -0.2242414, z: 0.15786742}
+      rotation: {x: -0.00000008940697, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint3
+      parentName: Troll_death_bones
+      position: {x: -0.04658493, y: 0.020091066, z: 1.3440222}
+      rotation: {x: -0.00000008940697, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint4
+      parentName: Troll_death_bones
+      position: {x: -0.02235773, y: -0.1698104, z: 0.29508492}
+      rotation: {x: -0.00000008940697, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint5
+      parentName: Troll_death_bones
+      position: {x: -0.3622142, y: -0.52332294, z: 0.7009297}
+      rotation: {x: -0.00000008940697, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint6
+      parentName: Troll_death_bones
+      position: {x: 0.3919253, y: -0.12655707, z: 1.5664321}
+      rotation: {x: -0.00000008940697, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint7
+      parentName: Troll_death_bones
+      position: {x: 0.42811066, y: 0.10667329, z: 1.3214926}
+      rotation: {x: -0.00000008940697, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint8
+      parentName: Troll_death_bones
+      position: {x: -0.08879862, y: -0.16352114, z: 0.6966011}
+      rotation: {x: -0.00000008940697, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint9
+      parentName: Troll_death_bones
+      position: {x: -0.1068235, y: 0.08315447, z: 1.5587204}
+      rotation: {x: -0.00000008940697, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint10
+      parentName: Troll_death_bones
+      position: {x: 0.0805969, y: -0.0020944786, z: 1.0159671}
+      rotation: {x: -0.00000008940697, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint11
+      parentName: Troll_death_bones
+      position: {x: -0.060933225, y: -0.40789953, z: 1.5502774}
+      rotation: {x: -0.00000008940697, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint13
+      parentName: Troll_death_bones
+      position: {x: -0.23441905, y: -0.11670972, z: 1.0384526}
+      rotation: {x: -0.00000008940697, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint14
+      parentName: Troll_death_bones
+      position: {x: 0.080694444, y: -0.07223283, z: 0.6856986}
+      rotation: {x: -0.00000008940697, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bones
+      parentName: Troll(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: bip_pelvis
+      parentName: bones
+      position: {x: -0.00000009313226, y: 0.035646077, z: 0.50413805}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000004}
+    - name: bip_spine_0
+      parentName: bip_pelvis
+      position: {x: -0, y: -0.061118245, z: 0.124743946}
+      rotation: {x: 0.0848206, y: 0.000000011599575, z: -9.874417e-10, w: 0.99639624}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000005}
+    - name: bip_spine_2
+      parentName: bip_spine_0
+      position: {x: -0, y: 0, z: 0.27263802}
+      rotation: {x: -0.039687507, y: 0.0000000030216851, z: 0.000000023086157, w: 0.99921215}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bip_neck
+      parentName: bip_spine_2
+      position: {x: -0, y: 0, z: 0.36261368}
+      rotation: {x: 0.18223587, y: -0.000000035945963, z: -0.000000010771903, w: 0.98325485}
+      scale: {x: 1, y: 0.9999998, z: 0.99999994}
+    - name: bip_neck1
+      parentName: bip_neck
+      position: {x: -0, y: 0, z: 0.20119865}
+      rotation: {x: -0, y: 0.00000003805878, z: -0.000000008728559, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: bip_head
+      parentName: bip_neck1
+      position: {x: 6.9388935e-19, y: 2.2738367e-15, z: 0.20119865}
+      rotation: {x: 3.9387021e-16, y: -0.000000025090142, z: -0.00000000459472, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: bip_jaw
+      parentName: bip_head
+      position: {x: -0, y: -0.045663767, z: -0.018420722}
+      rotation: {x: -4.2139884e-16, y: 0.000000024403423, z: 0.0000000074229254, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999998}
+    - name: bip_collar_L
+      parentName: bip_spine_2
+      position: {x: -0.1474467, y: -0.030570792, z: 0.30244055}
+      rotation: {x: 1, y: -0.000000031627234, z: 0.000000037936434, w: 8.131514e-16}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: bip_upperArm_L
+      parentName: bip_collar_L
+      position: {x: -0.20415404, y: 0, z: 0}
+      rotation: {x: 0.000000067385386, y: 0.0391214, z: 5.310241e-10, w: 0.9992345}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1.0000005}
+    - name: bip_Arm_Rotate_L
+      parentName: bip_upperArm_L
+      position: {x: -0.13524675, y: 0, z: 0}
+      rotation: {x: -0.0000000035986942, y: 0.000000014901159, z: 0.000000039884846,
+        w: 1}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000005}
+    - name: bip_Arm_Rotate1_L
+      parentName: bip_upperArm_L
+      position: {x: -0.3583591, y: 0, z: 0}
+      rotation: {x: -0.0000000037033057, y: -0.000000014901159, z: 0.00000004104429,
+        w: 1}
+      scale: {x: 1, y: 1.0000006, z: 1.0000005}
+    - name: bip_lowerArm_L
+      parentName: bip_upperArm_L
+      position: {x: -0.4589434, y: 0, z: -0.0000011006881}
+      rotation: {x: -0.001101004, y: -0.017767515, z: -0.033859648, w: 0.99926805}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000004}
+    - name: bip_Hand_Rotate1_L
+      parentName: bip_lowerArm_L
+      position: {x: -0.2510499, y: 0.0000019125155, z: -0.0000009697465}
+      rotation: {x: -0.000000058557156, y: 0.0000000038344985, z: -0.00000001117588,
+        w: 1}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000004}
+    - name: bip_hand_L
+      parentName: bip_lowerArm_L
+      position: {x: -0.42639673, y: 0, z: 0}
+      rotation: {x: -0.19429332, y: -0.02866064, z: -0.055276915, w: 0.97896534}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000004}
+    - name: bip_thumb_0_L
+      parentName: bip_hand_L
+      position: {x: -0.07320659, y: 0.13199176, z: 0.06679189}
+      rotation: {x: 0.7157261, y: -0.2341367, z: -0.5132236, w: 0.41172543}
+      scale: {x: 1.0000006, y: 0.9999996, z: 1.0000002}
+    - name: bip_finger_L5
+      parentName: bip_hand_L
+      position: {x: -0.20444329, y: 0.0022300077, z: 0.011410311}
+      rotation: {x: 0.20456865, y: 0.0655857, z: 0.037102133, w: 0.97594756}
+      scale: {x: 1.0000007, y: 1.0000002, z: 0.9999997}
+    - name: bip_finger_L6
+      parentName: bip_finger_L5
+      position: {x: -0.17841892, y: -0.0000007256981, z: -0.0000011297656}
+      rotation: {x: 0.000000029802322, y: -0.000000014901161, z: -0.00000006891787,
+        w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000001}
+    - name: bip_wp_L
+      parentName: bip_hand_L
+      position: {x: -0.21945241, y: -0.0000007256981, z: 0.15487987}
+      rotation: {x: 0.000000014901163, y: -0, z: 0.000000004190952, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000004}
+    - name: bip_collar_R
+      parentName: bip_spine_2
+      position: {x: 0.147447, y: -0.03057121, z: 0.30243933}
+      rotation: {x: -0.00000008940697, y: 0.000000010542409, z: -0.000000012645482,
+        w: 1}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: bip_upperArm_R
+      parentName: bip_collar_R
+      position: {x: 0.20415398, y: 0, z: 0}
+      rotation: {x: 0.00000018570141, y: 0.039118968, z: -0.000000031364145, w: 0.99923456}
+      scale: {x: 1.0000001, y: 0.9999997, z: 0.99999994}
+    - name: bip_Arm_Rotate_R
+      parentName: bip_upperArm_R
+      position: {x: 0.13524634, y: 0, z: 0}
+      rotation: {x: -0.000000055346344, y: 0.0000000074505797, z: -0.000000049878814,
+        w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.9999998}
+    - name: bip_Arm_Rotate1_R
+      parentName: bip_upperArm_R
+      position: {x: 0.35835811, y: 0, z: 0}
+      rotation: {x: -0.000000056622625, y: 0.000000014901159, z: -0.000000035733606,
+        w: 1}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: bip_lowerArm_R
+      parentName: bip_upperArm_R
+      position: {x: 0.45894244, y: 0, z: -0.0000011006881}
+      rotation: {x: -0.0011011005, y: -0.01776596, z: -0.03386033, w: 0.99926805}
+      scale: {x: 1, y: 0.9999998, z: 0.99999994}
+    - name: bip_Hand_Rotate1_R
+      parentName: bip_lowerArm_R
+      position: {x: 0.25105378, y: 0.0000019125155, z: -0.0000009697465}
+      rotation: {x: -4.7600673e-10, y: -0.000000022424157, z: 0.000000022351724, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: bip_hand_R
+      parentName: bip_lowerArm_R
+      position: {x: 0.4263976, y: 0, z: 0}
+      rotation: {x: -0.18033084, y: -0.21133213, z: -0.07461665, w: 0.9577327}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000001}
+    - name: bip_thumb_0_R
+      parentName: bip_hand_R
+      position: {x: 0.07320355, y: -0.13199395, z: -0.06678761}
+      rotation: {x: 0.7157261, y: -0.23413657, z: -0.5132236, w: 0.41172546}
+      scale: {x: 1.0000007, y: 0.99999994, z: 1.0000002}
+    - name: bip_finger_R5
+      parentName: bip_hand_R
+      position: {x: 0.20444176, y: 0.0022300077, z: 0.011410311}
+      rotation: {x: 0.19894382, y: 0.21415818, z: 0.009899125, w: 0.95627385}
+      scale: {x: 1.0000004, y: 0.99999994, z: 1.0000004}
+    - name: bip_finger_R6
+      parentName: bip_finger_R5
+      position: {x: 0.18434457, y: -0.0000007256981, z: -0.0000011297656}
+      rotation: {x: -0.000000059604638, y: 0.000000014901159, z: -0.000000020489095,
+        w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: bip_wp_R
+      parentName: bip_hand_R
+      position: {x: 0.21506445, y: 0.044897538, z: -0.13575533}
+      rotation: {x: -0.000000029802322, y: -0.000000022351742, z: 0.000000006519258,
+        w: 1}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000006}
+    - name: bip_hip_L
+      parentName: bip_pelvis
+      position: {x: -0.27356282, y: -0.0356461, z: -0.06909193}
+      rotation: {x: 0.986124, y: -0.07481195, z: -0.14818935, w: 0.0016220511}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000001}
+    - name: bip_knee_L
+      parentName: bip_hip_L
+      position: {x: -0, y: 0, z: 0.19385426}
+      rotation: {x: 0.05754559, y: 0.00000033527613, z: -0.00000008195639, w: 0.99834293}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000001}
+    - name: bip_foot_L
+      parentName: bip_knee_L
+      position: {x: -0, y: 0, z: 0.18148541}
+      rotation: {x: -0.03313392, y: 0.15024376, z: 0.06426073, w: 0.98600185}
+      scale: {x: 1, y: 1.0000004, z: 1.0000001}
+    - name: bip_toe_L
+      parentName: bip_foot_L
+      position: {x: -3.5527136e-17, y: 0.112021975, z: 0.064141974}
+      rotation: {x: 0.000000007450579, y: -0, z: -0.000000007450579, w: 1}
+      scale: {x: 1, y: 1.0000002, z: 1.0000002}
+    - name: cloth_b
+      parentName: bip_pelvis
+      position: {x: -0, y: 0.17925927, z: -0.063261196}
+      rotation: {x: -0, y: 0.000000011641532, z: 0.000000023283066, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: cloth_b1
+      parentName: cloth_b
+      position: {x: -0, y: 0.008648339, z: -0.115606986}
+      rotation: {x: 2.7105052e-16, y: -1.7763568e-15, z: -0.000000023283066, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: cloth_f
+      parentName: bip_pelvis
+      position: {x: -0, y: -0.24986841, z: -0.09469295}
+      rotation: {x: -0, y: 0.000000005820765, z: 0.00000001164153, w: 1}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: cloth_f1
+      parentName: cloth_f
+      position: {x: -0, y: 0, z: -0.20368142}
+      rotation: {x: -6.776262e-17, y: -0.0000000058207656, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: bip_hip_R
+      parentName: bip_pelvis
+      position: {x: 0.273563, y: -0.035646107, z: -0.06909237}
+      rotation: {x: -0.0016221404, y: -0.1481893, z: 0.074811906, w: 0.986124}
+      scale: {x: 1.0000001, y: 1.0000007, z: 1.0000002}
+    - name: bip_knee_R
+      parentName: bip_hip_R
+      position: {x: -0, y: 0, z: -0.1938541}
+      rotation: {x: 0.057545558, y: 0.00000031292439, z: -0.00000008895586, w: 0.99834293}
+      scale: {x: 1.0000001, y: 1, z: 1.0000007}
+    - name: bip_foot_R
+      parentName: bip_knee_R
+      position: {x: -0, y: 0, z: -0.18148501}
+      rotation: {x: -0.03313375, y: 0.1502437, z: 0.064260714, w: 0.9860018}
+      scale: {x: 0.99999994, y: 1.0000004, z: 1.0000002}
+    - name: bip_toe_R
+      parentName: bip_foot_R
+      position: {x: 0.0000003139586, y: -0.11202199, z: -0.06414207}
+      rotation: {x: -0, y: -0.000000014901161, z: -0.0000000013969839, w: 1}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
