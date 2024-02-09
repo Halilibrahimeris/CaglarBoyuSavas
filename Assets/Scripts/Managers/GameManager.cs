@@ -5,12 +5,21 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    public enum Build
+    {
+        Android,
+        PC
+    }
+    public Build BuildType;
+
     public static GameManager instance;
 
     public float MoneyTime;
     private float MoneyTimer;
+
     public int Money;
     public int AgeMoney;
+
     public TextMeshProUGUI AllyText;
     public EnemyBase EnemyBase;
     private void Start()

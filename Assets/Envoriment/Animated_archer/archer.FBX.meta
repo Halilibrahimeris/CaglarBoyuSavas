@@ -1438,6 +1438,22 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      - time: 0.18302383
+        functionName: Fire
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: a9675df3d60caa34da159f2ead9deb76,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.97628456
+        functionName: End
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: a9675df3d60caa34da159f2ead9deb76,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1

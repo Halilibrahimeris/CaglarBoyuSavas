@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 7468537630137719119}
   - component: {fileID: 2377623590065699611}
   - component: {fileID: 2054191432719115143}
+  - component: {fileID: 2845636082448061325}
   m_Layer: 0
   m_Name: Mediaval
   m_TagString: Untagged
@@ -251,6 +252,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2845636082448061325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555777418584758372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9675df3d60caa34da159f2ead9deb76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 0}
+  isEnd: 0
 --- !u!1 &770160647389194018
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,7 +2695,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7587764424403790585}
   - component: {fileID: 1874196768499068020}
-  - component: {fileID: 8170502499169542284}
   - component: {fileID: 5952243175292254794}
   - component: {fileID: 6531844935300344004}
   - component: {fileID: 1077235386701659038}
@@ -2729,24 +2743,6 @@ MonoBehaviour:
   Ally: {fileID: 0}
   Attack: 0
   Run: 0
---- !u!114 &8170502499169542284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5810541730767417435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9675df3d60caa34da159f2ead9deb76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stats: {fileID: 5952243175292254794}
-  attackanim: {fileID: 0}
-  Source: {fileID: 2054191432719115143}
-  ReadyToShoot: 0
-  _allowReset: 1
-  ShootingDelay: 3.1
 --- !u!114 &5952243175292254794
 MonoBehaviour:
   m_ObjectHideFlags: 0

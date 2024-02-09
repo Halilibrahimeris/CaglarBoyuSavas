@@ -1285,6 +1285,7 @@ GameObject:
   - component: {fileID: 8208621826016274015}
   - component: {fileID: 4476931362733710642}
   - component: {fileID: 7048174470768964141}
+  - component: {fileID: 6735155271902594471}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -1330,7 +1331,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 554f650743fd20845a10e604460497aa, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -1434,6 +1435,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6735155271902594471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3317600582523373427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9675df3d60caa34da159f2ead9deb76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 4361246259493537162}
+  Source: {fileID: 7048174470768964141}
+  Enemy: {fileID: 0}
+  isEnd: 0
+  "sald\u0131r\u0131miktar\u0131": 0
 --- !u!1 &3410898809632329424
 GameObject:
   m_ObjectHideFlags: 0
@@ -2223,7 +2241,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1008661121360732254}
   - component: {fileID: 7749502661878649995}
-  - component: {fileID: 3850093849202718678}
   - component: {fileID: 4361246259493537162}
   - component: {fileID: 8974456843531190003}
   - component: {fileID: 6675964482889954584}
@@ -2242,7 +2259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6342688429810543031}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.4310186, y: 1, z: -26.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2272,25 +2289,6 @@ MonoBehaviour:
   Ally: {fileID: 0}
   Attack: 0
   Run: 0
---- !u!114 &3850093849202718678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6342688429810543031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9675df3d60caa34da159f2ead9deb76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stats: {fileID: 4361246259493537162}
-  attackanim: {fileID: -203655887218126122, guid: b8b3c900bd2c4434ba0b5ea8320c4ac8,
-    type: 3}
-  Source: {fileID: 7048174470768964141}
-  ReadyToShoot: 0
-  _allowReset: 1
-  ShootingDelay: 0
 --- !u!114 &4361246259493537162
 MonoBehaviour:
   m_ObjectHideFlags: 0

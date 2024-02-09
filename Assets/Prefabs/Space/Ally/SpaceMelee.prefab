@@ -1264,7 +1264,7 @@ RectTransform:
   m_GameObject: {fileID: 3708570258083957825}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_LocalScale: {x: 0.03, y: 0.05, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4711699821725809398}
@@ -1629,7 +1629,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4395994628686822709}
   - component: {fileID: 6676882663667492147}
-  - component: {fileID: 2180562591721517687}
   - component: {fileID: 6216767457499506198}
   - component: {fileID: 4224726119109015697}
   - component: {fileID: 7780172186331441309}
@@ -1670,10 +1669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db117bb862621e45b723278bd22bafa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoliderType:
-  - Ally
-  - Enemy
-  SoliderTypeS: Ally
+  Type: 0
   Anim: {fileID: 4224468479603172015}
   Speed: 2
   MoveDistance: 1.5
@@ -1681,25 +1677,6 @@ MonoBehaviour:
   Ally: {fileID: 0}
   Attack: 0
   Run: 0
---- !u!114 &2180562591721517687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5597564401720700219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9675df3d60caa34da159f2ead9deb76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stats: {fileID: 6216767457499506198}
-  attackanim: {fileID: -203655887218126122, guid: 7a335616774afbd4aa55633b1bad694a,
-    type: 3}
-  Source: {fileID: 8709055981366079747}
-  ReadyToShoot: 0
-  _allowReset: 1
-  ShootingDelay: 0
 --- !u!114 &6216767457499506198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1809,6 +1786,7 @@ GameObject:
   - component: {fileID: 1961906115842209997}
   - component: {fileID: 4224468479603172015}
   - component: {fileID: 8709055981366079747}
+  - component: {fileID: 6629696814060565329}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -1950,6 +1928,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6629696814060565329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5929749478174589779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9675df3d60caa34da159f2ead9deb76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 6216767457499506198}
+  Source: {fileID: 8709055981366079747}
+  Enemy: {fileID: 0}
+  isEnd: 0
+  "sald\u0131r\u0131miktar\u0131": 0
 --- !u!1 &5931468033825159386
 GameObject:
   m_ObjectHideFlags: 0

@@ -49,11 +49,13 @@ public class AllyMovementAndStates : MonoBehaviour
         else if (Attack && Enemy!=null && attack.isEnd)// Saldýrý durumunda ve Düþman belirlendi ise
         {
             attack.Enemy = Enemy;
-            attack.Fire();//attack classýndaki ateþ Fonksiyonuna düþman verilerek çalýþacak
+            attack.isEnd = false;
+            Anim.SetTrigger("Attack");
         }
         if (Enemy == null)//Düþman yok ise
         {
             Attack = false;//saldýrý durumu false
+            attack.isEnd = true;
         }
     }
 
@@ -103,7 +105,6 @@ public class AllyMovementAndStates : MonoBehaviour
                     Ally = null;
                     Run = true;
                     Anim.SetBool("isRunning", true);
-                    Debug.Log(hit.collider.name + " " + gameObject.name + " " + transform.position);
                 }
             }
             

@@ -4,22 +4,21 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    public Stats stats;
-    Animator _anim;
-    public AudioSource Source;
+    private Stats stats;
+    private AudioSource Source;
 
-    public GameObject Enemy;
-    public bool isEnd;
+    [HideInInspector]public GameObject Enemy;
+    [HideInInspector]public bool isEnd;
+
     private void Start()
     {
-        _anim = GetComponent<Animator>();
         isEnd = true;
+        stats = GetComponentInParent<Stats>();
+        Source = GetComponent<AudioSource>();
     }
     public void Fire()
     {
-        isEnd = false;
         //Play Effect
-        _anim.SetTrigger("Attack");
         Debug.Log("Enemy Damage yedi");
         Stats _stats = Enemy.GetComponent<Stats>();
         BaseStats basestats = Enemy.GetComponent<BaseStats>();

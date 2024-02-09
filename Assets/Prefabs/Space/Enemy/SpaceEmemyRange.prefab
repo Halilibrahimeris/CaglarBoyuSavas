@@ -877,6 +877,7 @@ GameObject:
   - component: {fileID: 906101287223844493}
   - component: {fileID: 1512711419058563707}
   - component: {fileID: 5250166002406202761}
+  - component: {fileID: 2318591029485936350}
   m_Layer: 0
   m_Name: Exo Gray
   m_TagString: Untagged
@@ -1025,6 +1026,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2318591029485936350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480964651594872061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9675df3d60caa34da159f2ead9deb76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 3144332026233459439}
+  Source: {fileID: 5250166002406202761}
+  Enemy: {fileID: 0}
+  isEnd: 0
 --- !u!1 &1586275657433968116
 GameObject:
   m_ObjectHideFlags: 0
@@ -4884,7 +4901,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7928084046727315060}
   - component: {fileID: 8091606176093970237}
-  - component: {fileID: 8330218477999054155}
   - component: {fileID: 3144332026233459439}
   - component: {fileID: 2573074895585937860}
   - component: {fileID: 2825027489034632555}
@@ -4934,25 +4950,6 @@ MonoBehaviour:
   Ally: {fileID: 0}
   Attack: 0
   Run: 0
---- !u!114 &8330218477999054155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7377892058340761240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9675df3d60caa34da159f2ead9deb76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stats: {fileID: 3144332026233459439}
-  attackanim: {fileID: -203655887218126122, guid: a7158188373d9114a9ee06bffc4562a2,
-    type: 3}
-  Source: {fileID: 5250166002406202761}
-  ReadyToShoot: 0
-  _allowReset: 1
-  ShootingDelay: 1.5
 --- !u!114 &3144332026233459439
 MonoBehaviour:
   m_ObjectHideFlags: 0
