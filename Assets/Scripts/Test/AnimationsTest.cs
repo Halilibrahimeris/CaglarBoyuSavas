@@ -14,6 +14,7 @@ public class AnimationsTest : MonoBehaviour
         if (AttackTrigger)
         {
             anim.SetTrigger("Attack");
+            Walk = false;
             AttackTrigger = false;
         }
         if (Walk)
