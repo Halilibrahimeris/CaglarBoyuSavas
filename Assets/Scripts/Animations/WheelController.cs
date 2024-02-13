@@ -9,13 +9,13 @@ public class WheelController : MonoBehaviour
         Enemy,
         Ally
     }
-    public AllyMovementAndStates Parent;
+    public MovementAndStates Parent;
     public Type SoliderType;
     public List<GameObject> Wheels;
     public float Speed;
     private void Start()
     {
-        Parent = GetComponentInParent<AllyMovementAndStates>();
+        Parent = GetComponentInParent<MovementAndStates>();
     }
     private void Update()
     {

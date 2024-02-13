@@ -7,7 +7,6 @@ public class CameraMovement : MonoBehaviour
     public float speed;//kamera hýzýný belirten deðiþken
     public float LeftLimit, RightLimit;//kameranýn gideceði max limitler
 
-
     void Update()
     {
         if (Input.GetKey(KeyCode.D) && transform.position.z <= RightLimit)//D tuþuna basýyorsak ve limiti aþmadýysak
@@ -15,12 +14,10 @@ public class CameraMovement : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftShift))//shifte basýyorsak daha hýzlý gideceðiz
             {
                 transform.position += Vector3.forward * speed * 5 * Time.deltaTime;
-                Debug.Log("Saga git Shift");
             }
             else//shifte basýmýyorsak normal gideceðiz
             {
                 transform.position += Vector3.forward * speed * Time.deltaTime;
-                Debug.Log("Saga git");
             }
         }
         else if (Input.GetKey(KeyCode.A) && transform.position.z >= LeftLimit)//A tuþuna basýyorsak ve limiti aþmadýysak
@@ -28,16 +25,12 @@ public class CameraMovement : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftShift))//shifte basýyorsak daha hýzlý gideceðiz
             {
                 transform.position += Vector3.back * speed * 5 * Time.deltaTime;
-                Debug.Log("Sola git Shift");
             }
             else//shifte basýmýyorsak normal gideceðiz
             {
                 transform.position += Vector3.back * speed * Time.deltaTime;
-                Debug.Log("Sola git");
             }
         }
     }
-
-
 }
 

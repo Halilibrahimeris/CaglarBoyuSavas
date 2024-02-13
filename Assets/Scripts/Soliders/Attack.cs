@@ -1,13 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
     private Stats stats;
+    private MovementAndStates parent;
     private AudioSource Source;
-
-    [HideInInspector]public GameObject Enemy;
     [HideInInspector]public bool isEnd;
 
     private void Start()
@@ -15,22 +12,30 @@ public class Attack : MonoBehaviour
         isEnd = true;
         stats = GetComponentInParent<Stats>();
         Source = GetComponent<AudioSource>();
+        parent = GetComponentInParent<MovementAndStates>();
     }
     public void Fire()
     {
         //Play Effect
         Debug.Log("Enemy Damage yedi");
-        Stats _stats = Enemy.GetComponent<Stats>();
-        BaseStats basestats = Enemy.GetComponent<BaseStats>();
-        if (_stats != null)
+        if(parent.Enemy != null)
         {
-            _stats.TakeDamage(stats.AttackDamage);
+            Stats _stats = parent.Enemy.GetComponent<Stats>();
+            BaseStats basestats = parent.Enemy.GetComponent<BaseStats>();
+
+            if (_stats != null)
+                _stats.TakeDamage(stats.AttackDamage);
+
+            if (basestats != null)
+                basestats.TakeDamage(stats.AttackDamage);
+
+            if (Source != null)
+                Source.Play();
         }
-        if (basestats != null)
+        else
         {
-            basestats.TakeDamage(stats.AttackDamage);
+            Debug.Log(parent.gameObject.name);
         }
-        Source.Play();
     }
 
     public void End()

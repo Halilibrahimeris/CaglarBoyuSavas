@@ -27,7 +27,7 @@ public class Stats : MonoBehaviour
         }
         if(CurrentHealth <= 0)
         {
-            Destroy(this.gameObject);
+            Destroy(this.gameObject, 0f);
         }
     }
 }

@@ -5,12 +5,6 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public enum Build
-    {
-        Android,
-        PC
-    }
-    public Build BuildType;
 
     public static GameManager instance;
 
