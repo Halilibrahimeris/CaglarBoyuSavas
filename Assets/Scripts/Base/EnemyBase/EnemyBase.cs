@@ -41,7 +41,7 @@ public class EnemyBase : MonoBehaviour
                     this.Gold -= 200;
                     break;
                 case 1:
-                    var Solider1 = Instantiate(PrefabManager.instance.RangeSolidersEnemy[1], SpawnPoint);
+                    var Solider1 = Instantiate(PrefabManager.instance.RangeSolidersEnemy[0], SpawnPoint);
                     Solider1.transform.localPosition = Vector3.zero;
                     this.Gold -= 200;
                     break;
