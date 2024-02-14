@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+    public Camera Cam;
+
+    [HideInInspector] public bool splineGoForward;
+    [HideInInspector] public bool splineGoBack;
+
     public float speed;//kamera hýzýný belirten deðiþken
     public float LeftLimit, RightLimit;//kameranýn gideceði max limitler
-    public bool splineGoForward;
-    public bool splineGoBack;
+    public float MaxZoom, MinZoom;
 
     void Update()
     {
@@ -45,6 +49,13 @@ public class CameraMovement : MonoBehaviour
         }
         else
             splineGoBack = false;
+
+        if (Input.mouseScrollDelta.y >= 1 && Cam.fieldOfView > MaxZoom)
+        {
+            Cam.fieldOfView -= 1;
+        }
+        else if (Input.mouseScrollDelta.y <= -1 && Cam.fieldOfView < MinZoom)
+            Cam.fieldOfView += 1;
     }
 }
 

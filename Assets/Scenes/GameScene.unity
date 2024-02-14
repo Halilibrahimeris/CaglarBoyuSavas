@@ -6436,7 +6436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 499058323}
   - component: {fileID: 499058324}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PointAB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10996,7 +10996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 846754651}
   - component: {fileID: 846754652}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PointB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16140,7 +16140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1288825706}
   - component: {fileID: 1288825707}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PointD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19273,7 +19273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1474234098}
   - component: {fileID: 1474234099}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PointCD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20403,7 +20403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1530525439}
   - component: {fileID: 1530525440}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PointC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23166,8 +23166,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1763945426}
-  - component: {fileID: 1763945427}
   - component: {fileID: 1763945428}
+  - component: {fileID: 1763945427}
   m_Layer: 0
   m_Name: CameraParent
   m_TagString: Untagged
@@ -23238,6 +23238,8 @@ MonoBehaviour:
   RightLimit: 31.48
   splineGoForward: 0
   splineGoBack: 0
+  MaxZoom: 40
+  MinZoom: 70
 --- !u!1 &1771393500
 GameObject:
   m_ObjectHideFlags: 0
@@ -24168,7 +24170,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 70
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -25370,7 +25372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1899056352}
   - component: {fileID: 1899056353}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PointA
   m_TagString: Untagged
   m_Icon: {fileID: 0}

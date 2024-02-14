@@ -54,8 +54,6 @@ public class SplineTest : MonoBehaviour
     public void Rotation(Vector3 a, Vector3 b,Transform Camera)
     {
         Vector3 deneme = Vector3.Lerp(a, b, Interpolite);
-        Debug.Log(deneme);
-        Quaternion rotation = Quaternion.Euler(deneme.x, 0, 0);
-        Camera.localRotation = rotation;
+        Camera.localRotation = Quaternion.Euler(deneme.x, 0, 0);
     }
 }
