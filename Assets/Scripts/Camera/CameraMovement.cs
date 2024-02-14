@@ -6,6 +6,8 @@ public class CameraMovement : MonoBehaviour
 {
     public float speed;//kamera hýzýný belirten deðiþken
     public float LeftLimit, RightLimit;//kameranýn gideceði max limitler
+    public bool splineGoForward;
+    public bool splineGoBack;
 
     void Update()
     {
@@ -31,6 +33,18 @@ public class CameraMovement : MonoBehaviour
                 transform.position += Vector3.back * speed * Time.deltaTime;
             }
         }
+        if (Input.GetKey(KeyCode.W))
+        {
+            splineGoForward = true;
+        }
+        else
+            splineGoForward = false;
+        if (Input.GetKey(KeyCode.S))
+        {
+            splineGoBack = true;
+        }
+        else
+            splineGoBack = false;
     }
 }
 
