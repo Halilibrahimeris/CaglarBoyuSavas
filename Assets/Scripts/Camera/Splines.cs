@@ -10,7 +10,7 @@ public class Transforms
     public Vector3 Xrotation;
 }
 
-public class SplineTest : MonoBehaviour
+public class Splines : MonoBehaviour
 {
     public float Interpolite;
     public List<Transforms> classTransform;
@@ -31,7 +31,7 @@ public class SplineTest : MonoBehaviour
             {
                 Movement(classTransform[i].Point1, classTransform[i].Point2, classTransform[i].Point3);
             }
-            Rotation(classTransform[0].Xrotation, classTransform[1].Xrotation, classTransform[2].Point3);
+            Rotation(classTransform[3].Xrotation, classTransform[4].Xrotation, classTransform[5].Point3);
         }
         if (movement.splineGoBack)
         {
@@ -42,9 +42,9 @@ public class SplineTest : MonoBehaviour
             {
                 Movement(classTransform[i].Point1, classTransform[i].Point2, classTransform[i].Point3);
             }
-            Rotation(classTransform[0].Xrotation, classTransform[1].Xrotation, classTransform[2].Point3);
+            Rotation(classTransform[3].Xrotation, classTransform[4].Xrotation, classTransform[5].Point3);
         }
-        
+
     }
 
     public void Movement(Transform a, Transform b, Transform c)
@@ -54,6 +54,6 @@ public class SplineTest : MonoBehaviour
     public void Rotation(Vector3 a, Vector3 b,Transform Camera)
     {
         Vector3 deneme = Vector3.Lerp(a, b, Interpolite);
-        Camera.localRotation = Quaternion.Euler(deneme.x, 0, 0);
+        Camera.rotation = Quaternion.Euler(deneme.x, -90, 0);
     }
 }
