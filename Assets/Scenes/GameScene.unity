@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2830.5647, g: 3051.762, b: 4162.3755, a: 1}
+  m_IndirectSpecularColor: {r: 2829.84, g: 3050.2112, b: 4159.1724, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4093,7 +4093,7 @@ Transform:
   m_GameObject: {fileID: 273106373}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.85, y: 4.67, z: 0}
   m_LocalScale: {x: 6.5, y: 6.5, z: 6.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -8194,7 +8194,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &615115745
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12516,7 +12516,7 @@ Transform:
   m_GameObject: {fileID: 975011573}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.25, y: 3.85, z: 0}
   m_LocalScale: {x: 6.5, y: 6.5, z: 6.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -12665,7 +12665,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec5c1ec568eba8f44a630b3d4c0996f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam: {fileID: 1823688466}
   splineGoForward: 0
   splineGoBack: 0
   speed: 10
@@ -16304,7 +16303,7 @@ Transform:
   m_GameObject: {fileID: 1275444525}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.7, y: 8.4, z: 0}
   m_LocalScale: {x: 6.5, y: 6.5, z: 6.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -20649,7 +20648,7 @@ Transform:
   m_GameObject: {fileID: 1530031233}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 7.56, y: -0.78, z: 0}
   m_LocalScale: {x: 6.5, y: 6.5, z: 6.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -49194,6 +49193,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 771507646}
   - {fileID: 1250421973}
+  - {fileID: 978160639}
   - {fileID: 157207114}
   - {fileID: 432432461}
   - {fileID: 2013410475}
@@ -49204,4 +49204,3 @@ SceneRoots:
   - {fileID: 1006403868}
   - {fileID: 804832492}
   - {fileID: 1248572723}
-  - {fileID: 978160639}

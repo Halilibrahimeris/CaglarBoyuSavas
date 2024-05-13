@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public Camera Cam;
+    private Camera Cam;
 
     [HideInInspector] public bool splineGoForward;
     [HideInInspector] public bool splineGoBack;
@@ -12,6 +12,11 @@ public class CameraMovement : MonoBehaviour
     public float speed;//kamera hýzýný belirten deðiþken
     public float LeftLimit, RightLimit;//kameranýn gideceði max limitler
     public float MaxZoom, MinZoom;
+
+    private void Start()
+    {
+        Cam = Camera.main;
+    }
 
     void Update()
     {

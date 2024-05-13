@@ -31,7 +31,7 @@ public class Splines : MonoBehaviour
             {
                 Movement(classTransform[i].Point1, classTransform[i].Point2, classTransform[i].Point3);
             }
-            Rotation(classTransform[3].Xrotation, classTransform[4].Xrotation, classTransform[5].Point3);
+            Rotation(0,90);
         }
         if (movement.splineGoBack)
         {
@@ -42,7 +42,7 @@ public class Splines : MonoBehaviour
             {
                 Movement(classTransform[i].Point1, classTransform[i].Point2, classTransform[i].Point3);
             }
-            Rotation(classTransform[3].Xrotation, classTransform[4].Xrotation, classTransform[5].Point3);
+            Rotation(0,90);
         }
 
     }
@@ -51,9 +51,9 @@ public class Splines : MonoBehaviour
     {
         c.position = Vector3.Lerp(a.position, b.position, Interpolite);
     }
-    public void Rotation(Vector3 a, Vector3 b,Transform Camera)
+    public void Rotation(float startRotationx, float endRotationx)
     {
-        Vector3 deneme = Vector3.Lerp(a, b, Interpolite);
-        Camera.rotation = Quaternion.Euler(deneme.x, -90, 0);
+        float xRotation = Mathf.Lerp(0, 90, Interpolite);
+        Camera.main.transform.rotation = Quaternion.Euler(xRotation, -90, 0);
     }
 }
